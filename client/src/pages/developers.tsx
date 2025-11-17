@@ -16,10 +16,10 @@ export default function Developers() {
     },
     {
       name: "Mohit",
-      role: "Admin & Manager",
+      role: "Co-Owner & Technical Manager",
       username: "mohitbhai2007",
       description:
-        "Mohit acts as both a technical manager and a community liaison. Their work includes assisting in bot updates, debugging security issues, managing hosting environments, and ensuring LegionX maintains its high standards.",
+        "Mohit acts as both Co-Owner a technical manager. Their work includes assisting in bot updates, debugging security issues, managing hosting environments, and ensuring LegionX maintains its high standards.",
       avatar: "/mohit-pfp.png",
       discordId: "1155442418309673000",
     },
