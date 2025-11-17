@@ -57,7 +57,7 @@ export function LoadingScreen() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              Loading LegionX...
+              Loading...
             </motion.p>
           </div>
         </motion.div>
