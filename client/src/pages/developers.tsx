@@ -8,7 +8,7 @@ export default function Developers() {
     {
       name: "Jerry",
       role: "Owner & Lead Developer",
-      username: "jerry.js",
+      username: "jerry.jss",
       description:
         "As the founder and lead developer, Jerry architected LegionX from the ground up. He oversees all development, ensuring the bot remains stable, scalable, and packed with cutting-edge security features.",
       avatar: "/jerry-pfp.png",
