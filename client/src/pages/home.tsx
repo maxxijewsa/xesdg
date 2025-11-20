@@ -62,7 +62,7 @@ export default function Home() {
     },
     {
       label: "Total Users",
-      value: parseInt(stats.totalUsers.replace('k', '')) * 1000 || 28929,
+      value: parseInt(stats.totalUsers.replace('k', '')) || 28929,
       suffix: "+",
       icon: Users,
       animate: true,
