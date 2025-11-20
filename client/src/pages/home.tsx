@@ -55,14 +55,14 @@ export default function Home() {
   const statsDisplay = [
     {
       label: "Total Servers",
-      value: parseInt(stats.totalServers) || 45,
+      value: parseInt(stats.totalServers) || 49,
       suffix: "+",
       icon: TrendingUp,
       animate: true,
     },
     {
       label: "Total Users",
-      value: parseInt(stats.totalUsers.replace('k', '')) * 1000 || 27000,
+      value: parseInt(stats.totalUsers.replace('k', '')) * 1000 || 28929,
       suffix: "+",
       icon: Users,
       animate: true,
@@ -70,7 +70,7 @@ export default function Home() {
     { label: "Uptime", value: stats.uptime, icon: Zap, animate: false },
     {
       label: "Threats Blocked",
-      value: parseInt(stats.threatsblocked) || 16,
+      value: parseInt(stats.threatsblocked) || 21,
       suffix: "+",
       icon: Shield,
       animate: true,
