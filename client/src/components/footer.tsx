@@ -115,22 +115,6 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} LegionX. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <a
-              href="#"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-              data-testid="link-footer-privacy"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-              data-testid="link-footer-terms"
-            >
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>
