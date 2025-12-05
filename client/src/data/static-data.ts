@@ -26,13 +26,4 @@ export const testimonials: Testimonial[] = [
       "Since integrating LegionX into our server, we've seen a remarkable improvement in security and user engagement. The bot's features are top-notch, and the support from the LegionX team is outstanding. It's an essential tool for any serious Discord server.",
     rating: 5,
   },
-  {
-    id: "3",
-    serverName: "Chimtu.gg",
-    authorName: "Chimtu",
-    authorRole: "Server Owner",
-    content:
-      "LegionX has transformed the way we manage our Discord server. Its advanced protection mechanisms and user-friendly commands have made moderation effortless. Our community feels safer, and our engagement has increased. LegionX is a must-have for any Discord server looking to elevate its management and security.",
-    rating: 5,
-  },
 ];
