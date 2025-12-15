@@ -4,7 +4,7 @@ export const stats: Stats = {
   totalServers: "99+",
   totalUsers: "41672+",
   uptime: "99.9%",
-  threatsblocked: "54+",
+  threatsblocked: "73+",
 };
 
 export const testimonials: Testimonial[] = [
