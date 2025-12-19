@@ -15,6 +15,7 @@ import Commands from "@/pages/commands";
 import Developers from "@/pages/developers";
 import Premium from "@/pages/premium";
 import Dashboard from "@/pages/dashboard";
+import Privacy from "@/pages/privacy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/developers" component={Developers} />
       <Route path="/premium" component={Premium} />
       <Route path="/dashboard" component={Dashboard} />
+      <Route path="/privacy" component={Privacy} />
       <Route component={NotFound} />
     </Switch>
   );
