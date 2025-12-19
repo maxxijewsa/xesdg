@@ -9,7 +9,7 @@ export default function Privacy() {
       number: "1",
       title: "Information We Collect",
       content:
-        "Lynx collects Discord User ID, username, avatar, Server (Guild) ID, name, settings, message content for moderation (temporarily), moderation logs and actions, user levels and XP data, and ticket conversations and transcripts.",
+        "LegionX collects Discord User ID, username, avatar, Server (Guild) ID, name, settings, message content for moderation (temporarily), moderation logs and actions, user levels and XP data, and ticket conversations and transcripts.",
     },
     {
       number: "2",
@@ -27,13 +27,13 @@ export default function Privacy() {
       number: "4",
       title: "Data Sharing",
       content:
-        "We do not sell, trade, or share your data with third parties. Your data is only used within the Lynx bot to provide its services to your Discord server.",
+        "We do not sell, trade, or share your data with third parties. Your data is only used within the LegionX bot to provide its services to your Discord server.",
     },
     {
       number: "5",
       title: "Data Retention",
       content:
-        "We retain data as long as the bot is active in your server. When you remove Lynx from your server, you can request complete data deletion by contacting us on our Discord server.",
+        "We retain data as long as the bot is active in your server. When you remove LegionX from your server, you can request complete data deletion by contacting us on our Discord server.",
     },
     {
       number: "6",
@@ -71,7 +71,7 @@ export default function Privacy() {
             Privacy Policy
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
-            Your privacy is important to us. Learn how Lynx protects and manages your data.
+            Your privacy is important to us. Learn how LegionX protects and manages your data.
           </p>
           <p className="text-sm text-muted-foreground">
             Last updated: 12/19/2025
