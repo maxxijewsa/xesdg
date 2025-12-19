@@ -93,20 +93,20 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Community */}
+          {/* Legal */}
           <div>
-            <h3 className="font-semibold mb-4">Community</h3>
-            <div className="flex gap-4">
-              <a
-                href="https://discord.gg/SAvtnnurGr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover-elevate active-elevate-2 rounded-md p-2"
-                data-testid="link-footer-discord"
-              >
-                <SiDiscord className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
-              </a>
-            </div>
+            <h3 className="font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  data-testid="link-footer-privacy"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
