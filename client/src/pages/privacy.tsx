@@ -11,7 +11,7 @@ export default function Privacy() {
       number: "1",
       title: "Information We Collect",
       content:
-        "Lynx collects Discord User ID, username, avatar, Server (Guild) ID, name, settings, message content for moderation (temporarily), moderation logs and actions, user levels and XP data, and ticket conversations and transcripts.",
+        "LegionX collects Discord User ID, username, avatar, Server (Guild) ID, name, settings, message content for moderation (temporarily), moderation logs and actions, user levels and XP data, and ticket conversations and transcripts.",
     },
     {
       number: "2",
@@ -29,13 +29,13 @@ export default function Privacy() {
       number: "4",
       title: "Data Sharing",
       content:
-        "We do not sell, trade, or share your data with third parties. Your data is only used within the Lynx bot to provide its services to your Discord server.",
+        "We do not sell, trade, or share your data with third parties. Your data is only used within the LegionX bot to provide its services to your Discord server.",
     },
     {
       number: "5",
       title: "Data Retention",
       content:
-        "We retain data as long as the bot is active in your server. When you remove Lynx from your server, you can request complete data deletion by contacting us on our Discord server.",
+        "We retain data as long as the bot is active in your server. When you remove LegionX from your server, you can request complete data deletion by contacting us on our Discord server.",
     },
     {
       number: "6",
@@ -47,7 +47,7 @@ export default function Privacy() {
       number: "7",
       title: "Contact Us",
       content:
-        "If you have any questions about this Privacy Policy or need to exercise your privacy rights, please reach out to us. You can join our Discord server at discord.gg/SAvtnnurGr or contact us through GitHub for more information.",
+        "If you have any questions about this Privacy Policy or need to exercise your privacy rights, please reach out to us on our Discord server at discord.gg/SAvtnnurGr.",
     },
   ];
 
@@ -73,7 +73,7 @@ export default function Privacy() {
             Privacy Policy
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
-            Your privacy is important to us. Learn how Lynx protects and manages your data.
+            Your privacy is important to us. Learn how LegionX protects and manages your data.
           </p>
           <p className="text-sm text-muted-foreground">
             Last updated: 12/19/2025
@@ -133,7 +133,17 @@ export default function Privacy() {
               <p className="text-sm text-muted-foreground mb-8">
                 If you have any questions about this Privacy Policy or our privacy practices, reach out to us directly.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col gap-6 items-center">
+                <a
+                  href="https://discord.gg/SAvtnnurGr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="link-discord-icon"
+                  className="hover-elevate active-elevate-2 p-4 rounded-lg bg-primary/10 text-primary transition-colors"
+                  aria-label="Join our Discord server"
+                >
+                  <SiDiscord className="h-8 w-8" />
+                </a>
                 <Button asChild data-testid="button-discord-invite">
                   <a
                     href="https://discord.gg/SAvtnnurGr"
@@ -143,15 +153,6 @@ export default function Privacy() {
                   >
                     <SiDiscord className="h-5 w-5" />
                     Join Discord Server
-                  </a>
-                </Button>
-                <Button variant="outline" asChild data-testid="button-github-contact">
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Contact on GitHub
                   </a>
                 </Button>
               </div>
