@@ -2,8 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Lock } from "lucide-react";
-import { SiDiscord } from "react-icons/si";
+import { Lock, MessageCircle } from "lucide-react";
 
 export default function Privacy() {
   const sections = [
@@ -142,7 +141,7 @@ export default function Privacy() {
                   className="hover-elevate active-elevate-2 p-4 rounded-lg bg-primary/10 text-primary transition-colors"
                   aria-label="Join our Discord server"
                 >
-                  <SiDiscord className="h-8 w-8" />
+                  <MessageCircle className="h-8 w-8" />
                 </a>
                 <Button asChild data-testid="button-discord-invite">
                   <a
@@ -151,7 +150,7 @@ export default function Privacy() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2"
                   >
-                    <SiDiscord className="h-5 w-5" />
+                    <MessageCircle className="h-5 w-5" />
                     Join Discord Server
                   </a>
                 </Button>
