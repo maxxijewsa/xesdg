@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
 import { GridBackground } from "@/components/grid-background";
+import { ParticlesBackground } from "@/components/particles-background";
 import { LoadingScreen } from "@/components/loading-screen";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { Navbar } from "@/components/navbar";
@@ -40,6 +41,7 @@ function App() {
         <TooltipProvider>
           <LoadingScreen />
           <GridBackground />
+          <ParticlesBackground />
           <div className="min-h-screen flex flex-col relative z-10">
             <ScrollToTop />
             <Navbar />
