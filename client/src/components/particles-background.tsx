@@ -72,7 +72,7 @@ export function ParticlesBackground() {
               },
               modes: {
                 repulse: {
-                  distance: 200,
+                  distance: 150,
                   duration: 0.4,
                 },
                 push: {
