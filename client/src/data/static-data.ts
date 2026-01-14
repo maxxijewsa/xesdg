@@ -14,7 +14,7 @@ export const testimonials: Testimonial[] = [
     authorName: "DG Gaming",
     authorRole: "Server Owner",
     content:
-      "LegionX has been a game-changer for our Discord community. Its robust security features and seamless performance have significantly enhanced our server's safety and user experience. Highly recommended!",
+      "Wild has been a game-changer for our Discord community. Its robust security features and seamless performance have significantly enhanced our server's safety and user experience. Highly recommended!",
     rating: 5,
   },
   {
@@ -23,7 +23,7 @@ export const testimonials: Testimonial[] = [
     authorName: "Somvar Live",
     authorRole: "Server Owner",
     content:
-      "Since integrating LegionX into our server, we've seen a remarkable improvement in security and user engagement. The bot's features are top-notch, and the support from the LegionX team is outstanding. It's an essential tool for any serious Discord server.",
+      "Since integrating Wild into our server, we've seen a remarkable improvement in security and user engagement. The bot's features are top-notch, and the support from the Wild team is outstanding. It's an essential tool for any serious Discord server.",
     rating: 5,
   },
 ];
