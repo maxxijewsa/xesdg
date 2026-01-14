@@ -21,7 +21,7 @@ export default function Dashboard() {
             Server Management
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Configure LegionX protection and moderation settings for your Discord server.
+            Configure Wild protection and moderation settings for your Discord server.
           </p>
         </div>
       </section>
