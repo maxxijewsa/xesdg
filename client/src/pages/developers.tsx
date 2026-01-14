@@ -19,7 +19,7 @@ export default function Developers() {
       role: "Co-Owner & Technical Manager",
       username: "mohitbhai2007",
       description:
-        "Mohit acts as both Co-Owner a technical manager. Their work includes assisting in bot updates, debugging security issues, managing hosting environments, and ensuring LegionX maintains its high standards.",
+        "Mohit acts as both Co-Owner a technical manager. Their work includes assisting in bot updates, debugging security issues, managing hosting environments, and ensuring Wild maintains its high standards.",
       avatar: "/mohit-pfp.png",
       discordId: "1155442418309673000",
     },
@@ -44,7 +44,7 @@ export default function Developers() {
               Meet the Team
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              The passionate minds behind LegionX, dedicated to crafting the
+              The passionate minds behind Wild, dedicated to crafting the
               ultimate protection experience on Discord.
             </p>
           </motion.div>
