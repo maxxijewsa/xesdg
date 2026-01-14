@@ -11,7 +11,7 @@ export function Testimonials() {
             Trusted by Communities
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See what server owners and admins are saying about LegionX
+            See what server owners and admins are saying about Wild
           </p>
         </div>
 
