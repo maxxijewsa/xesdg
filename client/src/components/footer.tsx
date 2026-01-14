@@ -9,9 +9,9 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src="/bot-icon.png" alt="LegionX" className="h-10 w-10" />
+              <img src="/bot-icon.png" alt="Wild" className="h-10 w-10" />
               <span className="font-display text-xl font-bold bg-gradient-to-r from-primary to-chart-2 bg-clip-text text-transparent">
-                LegionX
+                Wild
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -113,7 +113,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} LegionX. All rights reserved.
+            © {new Date().getFullYear()} Wild. All rights reserved.
           </p>
         </div>
       </div>
