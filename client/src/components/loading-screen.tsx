@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const LOADING_COMPLETE_KEY = "legionx-loading-complete";
+const LOADING_COMPLETE_KEY = "Wild-loading-complete";
 
 export function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(() => {
