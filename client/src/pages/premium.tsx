@@ -16,7 +16,7 @@ export default function Premium() {
       name: "Free",
       price: "$0",
       period: "forever",
-      description: "Perfect for trying out LegionX",
+      description: "Perfect for trying out Wild",
       features: [
         "Basic anti-nuke protection",
         "Standard moderation tools",
@@ -32,7 +32,7 @@ export default function Premium() {
       name: "Premium",
       price: "$4.99",
       period: "per month",
-      description: "Unlock the full potential of LegionX",
+      description: "Unlock the full potential of Wild",
       features: [
         "Everything in Free, plus:",
         "Advanced anti-nuke protection",
