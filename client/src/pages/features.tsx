@@ -21,7 +21,7 @@ export default function Features() {
       icon: Shield,
       title: "Auto Moderation",
       description: "Automated content filtering with spam detection, link blocking, profanity filters, and configurable auto-sanctions for rule violations.",
-      benefit: "Set it and forget it - let LegionX handle spam and unwanted content automatically.",
+      benefit: "Set it and forget it - let Wild handle spam and unwanted content automatically.",
     },
     {
       icon: Eye,
@@ -32,13 +32,13 @@ export default function Features() {
     {
       icon: Zap,
       title: "Guaranteed 24/7 Uptime",
-      description: "LegionX boasts a 99.9% reliability guarantee. With auto-reconnect and persistent protection, your server is always secured.",
+      description: "Wild boasts a 99.9% reliability guarantee. With auto-reconnect and persistent protection, your server is always secured.",
       benefit: "Rely on a bot that's always online and ready to protect, ensuring your server's safety never lapses.",
     },
     {
       icon: Settings,
       title: "Custom Configuration",
-      description: "Take full control with intuitive features like custom commands, role management, and automated actions. Configure LegionX to match your server's needs.",
+      description: "Take full control with intuitive features like custom commands, role management, and automated actions. Configure Wild to match your server's needs.",
       benefit: "Tailor protection and moderation to your exact requirements with flexible configuration options.",
     },
     {
@@ -50,7 +50,7 @@ export default function Features() {
     {
       icon: Crown,
       title: "Exclusive Premium Features",
-      description: "Unlock the ultimate LegionX experience with Premium. Get access to advanced protection, priority support, custom presets, and more.",
+      description: "Unlock the ultimate Wild experience with Premium. Get access to advanced protection, priority support, custom presets, and more.",
       benefit: "Support the developers and gain access to powerful features that take your server protection to the next level.",
     },
   ];
@@ -76,7 +76,7 @@ export default function Features() {
             Limitless Possibilities
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            LegionX is engineered with advanced features to provide comprehensive protection and management for your Discord server.
+            Wild is engineered with advanced features to provide comprehensive protection and management for your Discord server.
           </p>
         </motion.div>
       </section>
