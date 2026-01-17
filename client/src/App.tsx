@@ -17,6 +17,7 @@ import Commands from "@/pages/commands";
 import Developers from "@/pages/developers";
 import Premium from "@/pages/premium";
 import Dashboard from "@/pages/dashboard";
+import Supporters from "@/pages/supporters";
 import Privacy from "@/pages/privacy";
 import NotFound from "@/pages/not-found";
 
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/commands" component={Commands} />
       <Route path="/developers" component={Developers} />
       <Route path="/premium" component={Premium} />
+      <Route path="/supporters" component={Supporters} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/privacy" component={Privacy} />
       <Route component={NotFound} />
