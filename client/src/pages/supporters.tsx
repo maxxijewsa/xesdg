@@ -8,12 +8,12 @@ import { Heart, Star, Award } from "lucide-react";
 
 const supporters = [
   {
-    name: "DG Gaming",
+    name: "Nishant",
     role: "Premium Supporter",
-    image: "https://cdn.discordapp.com/avatars/987586585141215282/25a167566270a647d77053075c2e9b89.png?size=1024",
-    bio: "Owner of IDO STORE and a long-time supporter of Wild. Passionate about community building.",
+    image: "https://cdn.discordapp.com/avatars/1360228164311322764/f56206e7982efd87a152920d2958c02b.png?size=4096",
+    bio: "Destiny of God",
     badges: ["Early Adopter", "Top Donator"],
-    impact: "Helped fund initial development",
+    impact: "Helped fund initial development, bought 6 permanent premium",
   },
 ];
 
