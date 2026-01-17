@@ -8,7 +8,7 @@ import { Heart, Star, Award } from "lucide-react";
 
 const supporters = [
   {
-    name: "Nishant",
+    name: "Nishank",
     role: "Premium Supporter",
     image: "https://cdn.discordapp.com/avatars/1360228164311322764/f56206e7982efd87a152920d2958c02b.png?size=4096",
     badges: ["Early Adopter", "Top Donator"],
