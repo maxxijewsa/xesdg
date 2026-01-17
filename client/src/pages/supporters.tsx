@@ -47,19 +47,27 @@ export default function Supporters() {
                 <div className="flex justify-center mb-4">
                   <Avatar className="w-24 h-24 border-2 border-primary/20">
                     <AvatarImage src={supporter.image} alt={supporter.name} />
-                    <AvatarFallback>{supporter.name.substring(0, 2)}</AvatarFallback>
+                    <AvatarFallback>
+                      {supporter.name.substring(0, 2)}
+                    </AvatarFallback>
                   </Avatar>
                 </div>
-                <CardTitle className="text-2xl font-bold">{supporter.name}</CardTitle>
-                <div className="text-primary font-medium">{supporter.role}</div>
+                <CardTitle className="text-2xl font-bold">
+                  {supporter.name}
+                </CardTitle>
+                <div className="text-primary font-medium">
+                  {supporter.role}
+                </div>
               </CardHeader>
+
               <CardContent className="space-y-4">
-                <p className="text-center text-muted-foreground italic">
-                  "{supporter.bio}"
-                </p>
                 <div className="flex flex-wrap justify-center gap-2">
                   {supporter.badges.map((badge) => (
-                    <Badge key={badge} variant="secondary" className="bg-primary/5 text-primary border-primary/10">
+                    <Badge
+                      key={badge}
+                      variant="secondary"
+                      className="bg-primary/5 text-primary border-primary/10"
+                    >
                       {badge === "Early Adopter" && <Star className="w-3 h-3 mr-1" />}
                       {badge === "Top Donator" && <Heart className="w-3 h-3 mr-1" />}
                       {badge === "Community Leader" && <Award className="w-3 h-3 mr-1" />}
@@ -67,9 +75,14 @@ export default function Supporters() {
                     </Badge>
                   ))}
                 </div>
+
                 <div className="pt-4 border-t border-dashed">
-                  <div className="text-sm font-semibold mb-1">Supporter Impact:</div>
-                  <p className="text-sm text-muted-foreground">{supporter.impact}</p>
+                  <div className="text-sm font-semibold mb-1">
+                    Supporter Impact:
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {supporter.impact}
+                  </p>
                 </div>
               </CardContent>
             </Card>
