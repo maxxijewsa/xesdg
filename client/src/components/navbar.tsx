@@ -15,6 +15,7 @@ export function Navbar() {
     { href: "/commands", label: "Commands" },
     { href: "/developers", label: "Developers" },
     { href: "/premium", label: "Premium" },
+    { href: "/supporters", label: "Supporters" },
     { href: "/privacy", label: "Privacy" },
   ];
 
