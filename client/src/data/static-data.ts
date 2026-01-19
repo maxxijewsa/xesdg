@@ -1,10 +1,10 @@
 import type { Stats, Testimonial } from "@shared/schema";
 
 export const stats: Stats = {
-  totalServers: "99+",
-  totalUsers: "41672+",
+  totalServers: "111+",
+  totalUsers: "34035+",
   uptime: "99.9%",
-  threatsblocked: "73+",
+  threatsblocked: "167+",
 };
 
 export const testimonials: Testimonial[] = [
