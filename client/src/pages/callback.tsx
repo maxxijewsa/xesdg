@@ -22,11 +22,10 @@ export default function Callback() {
             showSuccess ? 'bg-green-100' : 'bg-blue-100'
           }`}>
             {!showSuccess ? (
-              // Loading Dots
-              <div className="flex gap-2">
-                <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-                <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-                <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+              // Loading Ring
+              <div className="relative w-12 h-12">
+                <div className="absolute inset-0 border-4 border-blue-200 rounded-full"></div>
+                <div className="absolute inset-0 border-4 border-transparent border-t-blue-600 rounded-full animate-spin"></div>
               </div>
             ) : (
               // Success Checkmark
