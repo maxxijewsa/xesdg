@@ -70,7 +70,7 @@ export default function Callback() {
           showSuccess ? 'text-gray-600 opacity-100' : 'text-gray-500 opacity-70'
         }`}>
           {showSuccess 
-            ? "You've been successfully authenticated. Redirecting you now..." 
+            ? "You've been successfully authenticated. You can close this web now..." 
             : "Verifying your credentials..."}
         </p>
 
