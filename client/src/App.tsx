@@ -19,6 +19,7 @@ import Premium from "@/pages/premium";
 import Dashboard from "@/pages/dashboard";
 import Supporters from "@/pages/supporters";
 import Privacy from "@/pages/privacy";
+import Callback from "@/pages/callback";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/supporters" component={Supporters} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/privacy" component={Privacy} />
+      <Route path="/callback" component={Callback} />
       <Route component={NotFound} />
     </Switch>
   );
