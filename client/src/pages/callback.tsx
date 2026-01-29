@@ -8,7 +8,7 @@ export default function Callback() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSuccess(true);
-    }, 2000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
