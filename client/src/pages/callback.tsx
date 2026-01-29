@@ -22,24 +22,16 @@ export default function Callback() {
             showSuccess ? 'bg-green-100' : 'bg-blue-100'
           }`}>
             {!showSuccess ? (
-              // Loading Spinner
-              <svg 
-                className="w-12 h-12 text-blue-600 animate-spin" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2.5} 
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" 
-                />
-              </svg>
+              // Loading Dots
+              <div className="flex gap-2">
+                <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                <div className="w-3 h-3 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+              </div>
             ) : (
               // Success Checkmark
               <svg 
-                className="w-12 h-12 text-green-600 animate-[check-draw_0.8s_ease-out_forwards]" 
+                className="w-12 h-12 text-green-600" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
@@ -49,6 +41,11 @@ export default function Callback() {
                   strokeLinejoin="round" 
                   strokeWidth={3} 
                   d="M5 13l4 4L19 7"
+                  style={{
+                    strokeDasharray: 100,
+                    strokeDashoffset: 100,
+                    animation: 'check-draw 0.8s ease-out forwards'
+                  }}
                 />
               </svg>
             )}
@@ -80,11 +77,17 @@ export default function Callback() {
 
         {/* Loading Progress Bar */}
         <div className="w-full bg-gray-200 rounded-full h-2 mb-6 overflow-hidden">
-          <div className={`h-2 rounded-full transition-all duration-500 ${
-            showSuccess 
-              ? 'bg-gradient-to-r from-green-500 to-emerald-600 w-full' 
-              : 'bg-gradient-to-r from-blue-500 to-purple-600 animate-[progress_2s_ease-out_forwards]'
-          }`}></div>
+          <div 
+            className={`h-2 rounded-full transition-all duration-500 ${
+              showSuccess 
+                ? 'bg-gradient-to-r from-green-500 to-emerald-600' 
+                : 'bg-gradient-to-r from-blue-500 to-purple-600'
+            }`}
+            style={{
+              width: showSuccess ? '100%' : '0%',
+              animation: showSuccess ? 'none' : 'progress 2s ease-out forwards'
+            }}
+          ></div>
         </div>
 
         {/* Security Badge */}
@@ -108,11 +111,8 @@ export default function Callback() {
 
       <style jsx>{`
         @keyframes check-draw {
-          from {
-            stroke-dasharray: 0, 100;
-          }
           to {
-            stroke-dasharray: 100, 0;
+            stroke-dashoffset: 0;
           }
         }
 
