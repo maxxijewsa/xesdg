@@ -1,67 +1,96 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 export default function Callback() {
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSuccess(true);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50">
       <div className="text-center px-6 py-12 max-w-md">
-        {/* Success Icon with Animation */}
+        {/* Icon with Animation */}
         <div className="mb-8 relative">
-          <div className="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center animate-[scale-in_0.5s_ease-out]">
-            <svg 
-              className="w-12 h-12 text-green-600 animate-[check-draw_0.8s_ease-out_0.3s_forwards]" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={3} 
-                d="M5 13l4 4L19 7"
-                className="origin-center"
-              />
-            </svg>
+          <div className={`w-24 h-24 mx-auto rounded-full flex items-center justify-center transition-colors duration-500 ${
+            showSuccess ? 'bg-green-100' : 'bg-blue-100'
+          }`}>
+            {!showSuccess ? (
+              // Loading Spinner
+              <svg 
+                className="w-12 h-12 text-blue-600 animate-spin" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2.5} 
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" 
+                />
+              </svg>
+            ) : (
+              // Success Checkmark
+              <svg 
+                className="w-12 h-12 text-green-600 animate-[check-draw_0.8s_ease-out_forwards]" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={3} 
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            )}
           </div>
           {/* Ripple Effect */}
-          <div className="absolute inset-0 w-24 h-24 mx-auto bg-green-200 rounded-full animate-ping opacity-20"></div>
+          {showSuccess && (
+            <div className="absolute inset-0 w-24 h-24 mx-auto bg-green-200 rounded-full animate-ping opacity-20"></div>
+          )}
         </div>
 
         {/* Main Heading */}
         <h1 
-          className="text-4xl font-bold text-gray-900 mb-4 animate-[fade-in-up_0.6s_ease-out_0.2s_both]"
+          className={`text-4xl font-bold mb-4 transition-all duration-500 ${
+            showSuccess ? 'text-gray-900 opacity-100' : 'text-gray-600 opacity-70'
+          }`}
           data-testid="text-authorization-success"
         >
-          Authorization Success
+          {showSuccess ? 'Authorization Success' : 'Authorizing...'}
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg text-gray-600 mb-8 animate-[fade-in-up_0.6s_ease-out_0.4s_both]">
-          You've been successfully authenticated. Redirecting you now...
+        <p className={`text-lg mb-8 transition-all duration-500 ${
+          showSuccess ? 'text-gray-600 opacity-100' : 'text-gray-500 opacity-70'
+        }`}>
+          {showSuccess 
+            ? "You've been successfully authenticated. Redirecting you now..." 
+            : "Verifying your credentials..."}
         </p>
 
         {/* Loading Progress Bar */}
-        <div className="w-full bg-gray-200 rounded-full h-2 mb-6 overflow-hidden animate-[fade-in-up_0.6s_ease-out_0.6s_both]">
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full animate-[progress_2s_ease-out_forwards]"></div>
-        </div>
-
-        {/* Additional Info */}
-        <div className="flex items-center justify-center gap-2 text-sm text-gray-500 animate-[fade-in-up_0.6s_ease-out_0.8s_both]">
-          <svg 
-            className="w-4 h-4 animate-spin" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" 
-            />
-          </svg>
-          <span>Please wait while we complete the setup</span>
+        <div className="w-full bg-gray-200 rounded-full h-2 mb-6 overflow-hidden">
+          <div className={`h-2 rounded-full transition-all duration-500 ${
+            showSuccess 
+              ? 'bg-gradient-to-r from-green-500 to-emerald-600 w-full' 
+              : 'bg-gradient-to-r from-blue-500 to-purple-600 animate-[progress_2s_ease-out_forwards]'
+          }`}></div>
         </div>
 
         {/* Security Badge */}
-        <div className="mt-8 flex items-center justify-center gap-2 text-xs text-gray-400 animate-[fade-in-up_0.6s_ease-out_1s_both]">
+        <div className={`mt-8 flex items-center justify-center gap-2 text-xs transition-all duration-500 ${
+          showSuccess ? 'text-green-600' : 'text-gray-400'
+        }`}>
           <svg 
             className="w-4 h-4" 
             fill="currentColor" 
@@ -73,39 +102,17 @@ export default function Callback() {
               clipRule="evenodd" 
             />
           </svg>
-          <span>Secure connection established</span>
+          <span>{showSuccess ? 'Secure connection established' : 'Establishing secure connection...'}</span>
         </div>
       </div>
 
       <style jsx>{`
-        @keyframes scale-in {
-          from {
-            transform: scale(0);
-            opacity: 0;
-          }
-          to {
-            transform: scale(1);
-            opacity: 1;
-          }
-        }
-
         @keyframes check-draw {
           from {
             stroke-dasharray: 0, 100;
           }
           to {
             stroke-dasharray: 100, 0;
-          }
-        }
-
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
           }
         }
 
