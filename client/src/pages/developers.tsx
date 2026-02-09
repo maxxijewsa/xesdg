@@ -8,7 +8,7 @@ export default function Developers() {
     {
       name: "Jerry",
       role: "Owner & Lead Developer",
-      username: "jerry.jss",
+      username: "rai.js",
       description:
         "As the founder and lead developer, Jerry oversees all development, ensuring the bot remains stable, scalable, and packed with cutting-edge security features.",
       avatar: "/jerry-pfp.png",
