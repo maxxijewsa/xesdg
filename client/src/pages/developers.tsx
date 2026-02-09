@@ -6,7 +6,7 @@ import { MessageCircle } from "lucide-react";
 export default function Developers() {
   const team = [
     {
-      name: "Jerry",
+      name: "Rai !!",
       role: "Owner & Lead Developer",
       username: "rai.js",
       description:
