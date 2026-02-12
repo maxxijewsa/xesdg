@@ -1,9 +1,11 @@
 import express from "express";
 import fs from "fs";
 import path from "path";
+import cors from "cors";
 import { statsSchema } from "../shared/schema";
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 const STATIC_DATA_PATH = path.resolve(process.cwd(), "client/src/data/static-data.ts");
@@ -36,7 +38,7 @@ app.post("/api/update-stats", (req, res) => {
   }
 });
 
-const PORT = 3000;
-app.listen(PORT, "0.0.0.0", () => {
+const PORT = process.env.PORT || 3000;
+app.listen(Number(PORT), "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
