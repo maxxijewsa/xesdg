@@ -2,7 +2,7 @@ import type { Stats, Testimonial } from "@shared/schema";
 
 export const stats: Stats = {
   totalServers: "213+",
-  totalUsers: "68+",
+  totalUsers: "68734+",
   uptime: "99.9%",
   threatsblocked: "482+",
 };
