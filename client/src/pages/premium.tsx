@@ -26,7 +26,7 @@ export default function Premium() {
       ],
       ctaText: "Get Started",
       ctaLink:
-        "https://discord.com/oauth2/authorize?client_id=1428989669688873083",
+        "https://discord.com/oauth2/authorize?client_id=1428989669688873083&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fdiscord.gg%2FAGs3wbgCRT&integration_type=0&scope=bot+identify",
     },
     {
       name: "Premium",
