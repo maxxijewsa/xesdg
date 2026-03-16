@@ -175,7 +175,7 @@ export default function Home() {
               className="hover:scale-105 transition-transform"
             >
               <a
-                href="https://discord.gg/SAvtnnurGr"
+                href="https://discord.gg/e7FQvcy6Yv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="backdrop-blur-sm"
