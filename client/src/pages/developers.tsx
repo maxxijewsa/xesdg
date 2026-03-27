@@ -10,7 +10,7 @@ export default function Developers() {
       role: "Owner & Lead Developer",
       username: "rai.js",
       description:
-        "As the founder and lead developer, Jerry oversees all development, ensuring the bot remains stable, scalable, and packed with cutting-edge security features.",
+        "As the founder and lead developer, Rai oversees all development, ensuring the bot remains stable, scalable, and packed with cutting-edge security features.",
       avatar: "/jerry-pfp.png",
       discordId: "1378290223909437552",
     },
