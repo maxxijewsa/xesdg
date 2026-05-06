@@ -34,9 +34,9 @@ export function Navbar() {
             data-testid="link-home"
             className="flex items-center gap-3 hover-elevate active-elevate-2 rounded-md px-2 py-1 -ml-2"
           >
-            <img src="/bot-icon.png" alt="Wild Logo" className="h-10 w-10 md:h-12 md:w-12" />
+            <img src="/bot-icon.png" alt="Kyrex Logo" className="h-10 w-10 md:h-12 md:w-12" />
             <span className="font-display text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-chart-2 bg-clip-text text-transparent">
-              Wild
+              Kyrex
             </span>
           </Link>
 
