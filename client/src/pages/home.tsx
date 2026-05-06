@@ -120,7 +120,7 @@ export default function Home() {
           >
             <img
               src="/bot-icon.png"
-              alt="Wild Logo"
+              alt="Kyrex Logo"
               className="w-32 md:w-48 h-32 md:h-48"
               data-testid="img-hero-logo"
             />
@@ -132,7 +132,7 @@ export default function Home() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Wild - Ultimate Discord <br className="hidden md:block" />
+            Kyrex - Ultimate Discord <br className="hidden md:block" />
             Protection & Management
           </motion.h1>
 
@@ -239,7 +239,7 @@ export default function Home() {
               Powerful Features for Total Protection
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Wild provides everything you need to secure and manage your
+              Kyrex provides everything you need to secure and manage your
               Discord server with confidence.
             </p>
           </div>
@@ -296,7 +296,7 @@ export default function Home() {
             Ready to protect your server?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Add Wild to your server today and experience unmatched protection
+            Add Kyrex to your server today and experience unmatched protection
             and management.
           </p>
           <Button size="lg" asChild data-testid="button-bottom-invite">
@@ -305,7 +305,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Add Wild Now
+              Add Kyrex Now
             </a>
           </Button>
         </div>
